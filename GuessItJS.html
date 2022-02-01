@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Guess It!</title>
+		<script>
+			alert( "Guess a number between 1 and 20. You have three (3) tries." )	//Alert the user of the game parameters
+			//Guess number one
+			var guess1 = prompt ( "Three (3) tries remaining. Enter your guess." )	//Prompts user to guess for the first time
+			if( guess1 == 17 )
+				alert( "Correct! The number was 17!" );
+			else
+				alert( "Incorrect. Try again." );
+			//Guess number two
+			var guess2 = prompt ( "Two (2) tries remaining. Enter your guess." )	//Prompts user to guess for the second time
+			if( guess2 == 17 )
+				alert( "Correct! The number was 17!" );
+			else
+				alert( "Incorrect. Try again." );
+			//Guess number three
+			var guess3 = prompt ( "One (1) tries remaining. Enter your guess." )	//Prompts user to guess for the third time
+			if( guess3 == 17 )
+				alert( "Correct! The number was 17!" );
+			else
+				alert( "Incorrect. The correct answer was 17 (Seventeen)" );
+			
+			document.write( "<br /><br /><br /><b>Guess 1:</b> " + guess1 + "<br /><br /> <b>Guess 2:</b> " + guess2 + "<br /><br /> <b>Guess 3:</b> " + guess3 )
+		</script>
+		<style>
+			body	{text-align: center;
+					background-color: lightblue;
+					font-size: 35px;}
+			.cpr	{font-size: 15px;}
+		</style>
+	</head>
+	<body>
+		<br /><br /><br /><br /><br />
+		<small>
+			<p class = cpr>Copyright Vikram East 2022</p>
+		</small>
+	</body>
+</html>
